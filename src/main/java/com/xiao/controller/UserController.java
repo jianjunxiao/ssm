@@ -26,7 +26,7 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "/showUser", method = RequestMethod.POST)
-    public void index(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+    public void index(HttpServletRequest request, HttpServletResponse response) {
         try {
             request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
