@@ -34,10 +34,6 @@ public class UserController {
             User user = userService.selectUserById(userId);
             response.getWriter().write(new ObjectMapper().writeValueAsString(user));
             response.getWriter().close();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
